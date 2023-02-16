@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=960 height=600></canvas>
+      <canvas id="unity-canvas" width=1280 height=720></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -56,15 +56,15 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/UnityBuild.loader.js";
+      var loaderUrl = buildUrl + "/CPR_Unity.loader.js";
       var config = {
-        dataUrl: buildUrl + "/UnityBuild.data.unityweb",
-        frameworkUrl: buildUrl + "/UnityBuild.framework.js.unityweb",
-        codeUrl: buildUrl + "/UnityBuild.wasm.unityweb",
+        dataUrl: buildUrl + "/CPR_Unity.data.unityweb",
+        frameworkUrl: buildUrl + "/CPR_Unity.framework.js.unityweb",
+        codeUrl: buildUrl + "/CPR_Unity.wasm.unityweb",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "CPR_HERO_Prototype",
-        productVersion: "0.1.0",
+        productVersion: "0.1.1",
         showBanner: unityShowBanner,
       };
 
@@ -93,8 +93,8 @@
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
 
-        canvas.style.width = "960px";
-        canvas.style.height = "600px";
+        canvas.style.width = "1280px";
+        canvas.style.height = "720px";
       }
 
       loadingBar.style.display = "block";
